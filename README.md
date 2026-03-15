@@ -21,50 +21,74 @@ Dataset URL: https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-c
 
 ### Dataset structure:
 
-RowNumber - corresponds to the record (row) number 
+The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes.
 
-CustomerId - unique identifier for customers 
+Key variables include:
 
-Surname - the surname of customer
+**CreditScore** – Customer credit score
 
-CreditScore - can have an effect on customer churn, since a customer with a higher credit score is less likely to leave the bank
+**Geography** - Location of customer
 
-Geography - a customer’s location can affect their decision to leave the bank
+**Gender** - Gender of customer
 
-Gender - gender of customer
+**Age** – Customer age
 
-Age - customer’s age 
+**Tenure** – Number of years the customer has stayed with the bank
 
-Tenure - number of years that the customer has been a client of the bank. 
+**Balance** – Account balance
 
-Balance - bank balance of a customer
+**NumOfProducts** – Number of banking products owned
 
-NumOfProducts - number of products that a customer has purchased through the bank.
+**HasCrCard** – Whether the customer owns a credit card
 
-HasCrCard - denotes whether or not a customer has a credit card
+**IsActiveMember** – Whether the customer is actively using banking services
 
-IsActiveMember—active customers are less likely to leave the bank.
+**EstimatedSalary** – Estimated annual salary
 
-EstimatedSalary - customer’s salary 
+**Exited** – Target variable indicating whether the customer churned
 
-Exited - whether or not the customer left the bank.
+**Complaint** - Whether the customer makes a complaint
 
-Complaint - customer has complaint or not.
+**Satisfaction Score** - Score provided by the customer for their complaint resolution.
 
-Satisfaction Score - Score provided by the customer for their complaint resolution.
+**Card Type** - Type of card held by the customer.
 
-Card Type - type of card held by the customer.
+**Points Earned** - The points earned by the customer for using a credit card.
 
-Points Earned - the points earned by the customer for using a credit card.
+Some identifier columns such as RowNumber, CustomerId, and Surname were removed during data cleaning because they do not provide meaningful predictive information as well as to ensuring customer's privacy
 
-### Initial Analysis plan:
+## Project Workflow
 
-Data cleaning: Handled missing value, correct data types and remove duplicate 
+The analysis follows a typical data analytics pipeline:
 
-EDA: Explore dataset structure, detect patterns, analyze distributions, and evaluate relationships between features and churn
+**1. Data Cleaning**
 
-Analysis: Identify key churn drivers using statistical analysis and feature correlation
+* Removed identifier variables
 
-Visualization: Create histograms,  correlation heatmaps, and prediction model to generate actionable insights
+* Checked for missing values
 
-Data Storytelling: present findings and relationship between variables that affect customer churning as well as recommending retention strategy to enhance customers’ loyalty 
+* Verified data types
+
+**2. Exploratory Data Analysis**
+
+* Summary statistics
+
+* Correlation heatmap
+
+* Distribution analysis
+
+* Boxplot analysis for key variables
+
+**3. Feature Selection**
+
+* Selected key variables based on correlation analysis and business relevance
+
+**4. Logistic Regression Modeling**
+
+* Built a logistic regression model to estimate the probability of customer churn
+
+**5. Model Evaluation**
+
+* Interpreted model coefficients
+
+* Analyzed statistical significance
