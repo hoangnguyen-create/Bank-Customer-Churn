@@ -122,7 +122,7 @@ The analysis follows a typical data analytics pipeline:
 
 >> VALUE COUNT COMPLAIN EXITED SCRN
 
-The variable “Complain” was excluded from modeling due to its near-perfect correlation with the target variable (Exited), indicating potential data leakage.
+The variable “Complain” was excluded from modeling due to its near-perfect correlation with the target variable (Exited), indicating potential data leakage. Including it would highly affect the model's predictive performance without providing meaningful predictive insight.
 
 >> INSERT CORRELATION HEATMAP SCRN
 
