@@ -4,16 +4,21 @@ The primary objective of this project is to identify the main factors that drive
 By understanding churn drivers and predicting high-risk customers, the bank can develop loyalty programs and retention strategies to improve customer lifetime value and reduce revenue loss.
 
 ### Research question: 
-What key demographic, behavioral, and financial factors significantly influence customer churn in the bank?
-How do customer engagement indicators (ex: active membership, product usage, complaints, satisfaction score) relate to churn behavior?
-Can we build a predictive model to estimate the probability of customer churn and identify high-risk customers for targeted retention strategies?
+1. What key demographic, behavioral, and financial factors significantly influence customer churn in the bank?
+
+2. How do customer engagement indicators (ex: active membership, product usage, complaints, satisfaction score) relate to churn behavior?
+
+3. Can we build a predictive model to estimate the probability of customer churn and identify high-risk customers for targeted retention strategies?
 
 ### Expected outcomes:
 
-Identification of statistically significant churn drivers
-Quantification of impact for each key variable
-Development of a machine learning model to predict churn probability
-Actionable business recommendations to improve retention
+* Identification of statistically significant churn drivers
+
+* Quantification of impact for each key variable
+
+* Development of a machine learning model to predict churn probability
+
+* Actionable business recommendations to improve retention
 
 ### Dataset: Bank Customer Churn
 
@@ -23,7 +28,7 @@ Dataset URL: https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-c
 
 The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes.
 
-Key variables include:
+**Key variables** include:
 
 **CreditScore** – Customer credit score
 
@@ -55,7 +60,7 @@ Key variables include:
 
 **Points Earned** - The points earned by the customer for using a credit card.
 
-Some identifier columns such as RowNumber, CustomerId, and Surname were removed during data cleaning because they do not provide meaningful predictive information as well as to ensuring customer's privacy
+Some identifier columns such as **RowNumber**, **CustomerId**, and **Surname** were removed during data cleaning because they do not provide meaningful predictive information as well as to ensuring customer's privacy
 
 ## Project Workflow
 
