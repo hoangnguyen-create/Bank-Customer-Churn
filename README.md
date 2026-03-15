@@ -20,6 +20,22 @@ By understanding churn drivers and predicting high-risk customers, the bank can 
 
 * Actionable business recommendations to improve retention
 
+### Tools Used
+
+* Python
+
+* Pandas
+
+* NumPy
+
+* Seaborn
+
+* Matplotlib
+
+* Statsmodels
+
+* Power BI
+
 ### Dataset: Bank Customer Churn
 
 Dataset URL: https://www.kaggle.com/datasets/radheshyamkollipara/bank-customer-churn
@@ -98,7 +114,61 @@ The analysis follows a typical data analytics pipeline:
 
 * Analyzed statistical significance
 
-## Explaratory Data Analysis
+### Explaratory Data Analysis
 
+>> INSERT DF.HEAD SCREENSHOT
 
+>> INSERT POWER BI DASHBOARD PICTURE 
+
+>> VALUE COUNT COMPLAIN EXITED SCRN
+
+The variable “Complain” was excluded from modeling due to its near-perfect correlation with the target variable (Exited), indicating potential data leakage.
+
+>> INSERT CORRELATION HEATMAP SCRN
+
+EDA revealed several patterns related to customer churn:
+
+* **Age** shows a weak positive correlation with customer churn (0.29), indicating that older customers are more likely to leave the bank
+
+* Customers with **higher account balances** tend to have a higher probability of churn.
+
+* **Active members** are significantly less likely to churn compared to inactive customers.
+
+* The correlation heatmap also showed that **some variables** have weak relationships with churn and were therefore **excluded** from the final model.
+
+Additionally, a boxplot analysis of **Age vs Churn** further confirmed that churned customers tend to be older than those who remain with the bank.
+
+>> INSERT BOXPLOT MODEL SCRN
+
+### Logistic Regression Model
+
+A logistic regression model was developed using the following variables:
+
+1. Age
+
+2. Balance
+
+3. IsActiveMember
+
+>> INSERT LOGISTIC MODEL SCRN
+
+The model results show that all selected variables are statistically significant predictors of customer churn (LLR p-value < 0.05).
+
+Key findings from the model:
+
+* Age has a positive relationship with churn probability.
+
+* Higher balances slightly increase the likelihood of churn.
+
+* Active membership significantly reduces the probability of customer churn.
+
+## Business Recommendations 
+
+Based on the analysis, the following strategies are recommended:
+
+1. Focus on develop **targeted retention campaigns** for older customers.
+
+2. Offer **personalized financial incentives** for high-balance customers to reduce churn risk.
+
+3. Strengthen customer **engagement programs** or advertise **exclusive member benefits** to encourage inactive customers to become active users.
 
