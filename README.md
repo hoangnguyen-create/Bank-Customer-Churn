@@ -97,3 +97,8 @@ The analysis follows a typical data analytics pipeline:
 * Interpreted model coefficients
 
 * Analyzed statistical significance
+
+## Explaratory Data Analysis
+
+
+
