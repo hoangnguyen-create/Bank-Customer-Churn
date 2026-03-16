@@ -126,7 +126,7 @@ The analysis follows a typical data analytics pipeline:
 
 Almost all churned customers filed complaints. Approximately **99.8%** of churned customers had previously complained, indicating that the variable "Complain" occurs very close to the churn event and may introduce data leakage in the model. The variable "Complain" was therefore excluded from modeling. 
 
-[image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/CORRELATION%20HEATMAP.png)
+![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/CORRELATION%20HEATMAP.png)
 
 
 EDA revealed several patterns related to customer churn:
@@ -141,7 +141,7 @@ EDA revealed several patterns related to customer churn:
 
 Additionally, a boxplot analysis of **Age vs Churn** further confirmed that churned customers tend to be older than those who remain with the bank.
 
-[image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/BOXPLOT.png)
+![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/BOXPLOT.png)
 
 ### Logistic Regression Model
 
@@ -153,7 +153,7 @@ A logistic regression model was developed using the following variables:
 
 3. IsActiveMember
 
-[image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/LOGISTIC%20REGRESSION%20MODEL.png)
+![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/LOGISTIC%20REGRESSION%20MODEL.png)
 
 The model results show that all selected variables are statistically significant predictors of customer churn (LLR p-value < 0.05).
 
