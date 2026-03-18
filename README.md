@@ -1,5 +1,5 @@
 # Bank Customer Churn
-As acquiring new customers is more costly than retaining existing one, **the primary objective** of this project is to identify the main factors that drive customers to churn and to develop a predictive model capable of estimating churn probability at the individual customer level.
+**The primary objective** of this project is to identify the main factors that drive customers to churn and to develop a predictive model capable of estimating churn probability at the individual customer level since acquiring new customers is more costly than retaining existing one.
 
 By understanding churn drivers and predicting high-risk customers, the bank can develop loyalty programs and retention strategies to improve customer lifetime value and reduce revenue loss.
 
