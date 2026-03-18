@@ -122,9 +122,21 @@ The analysis follows a typical data analytics pipeline:
 
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/POWER%20BI%20DASHBOARD.png)
 
+* Diamond card type has the highest number of complaints, which may be influenced by a larger customer base 
+
+* Most complaints are located in France and Germany, suggesting potential regional differences in customer experience
+
+* Approximately 28% of active members churn, meaning the majority remain with the bank, suggesting that active engagement reduces churn likelihood
+
+* The average satisfaction score is relatively low (3.01), indicating room for improvement in customer experience
+
+**This step uses value counts to understand the distribution and relationship between "Complain" and "Exited".**
+
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/DF%20-%20EXITED%20VALUE%20COUNT.png)
 
 Almost all churned customers filed complaints. Approximately **99.8%** of churned customers had previously complained, indicating that the variable "Complain" occurs very close to the churn event and may introduce data leakage in the model. The variable "Complain" was therefore excluded from modeling. 
+
+### Correlation Heatmap
 
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/CORRELATION%20HEATMAP.png)
 
@@ -165,13 +177,26 @@ Key findings from the model:
 
 * Active membership significantly reduces the probability of customer churn.
 
+### Model Optimization
+<img width="674" height="526" alt="image" src="https://github.com/user-attachments/assets/87a875ea-d50d-410c-9faa-0be0114aa023" />
+
+* The model overall shows improved recall, indicating better ability to identify churn customers. However, the recall is still relatively low
+
+* Further optimization and feature enhancement are required to make it fully suitable for business application
+
+### Confusion Matrix
+<img width="473" height="483" alt="image" src="https://github.com/user-attachments/assets/5ecfec11-3ffc-42e4-904f-9d4cd57b91f4" />
+
 ## Business Recommendations 
 
 Based on the analysis, the following strategies are recommended:
 
-1. Focus on develop **targeted retention campaigns** for older customers.
+1. Focus on develop **targeted retention campaigns** for older customers
 
-2. Offer **personalized financial incentives** for high-balance customers to reduce churn risk.
+2. Offer **personalized financial incentives** for high-balance customers to reduce churn risk
 
-3. Strengthen customer **engagement programs** or advertise **exclusive member benefits** to encourage inactive customers to become active users.
+3. Strengthen customer **engagement programs** or advertise **exclusive member benefits** to encourage inactive customers to become active users
+
+4. Improving **customer service skill** results in **higher customer satisfaction** which in turn **reduces churn**
+
 
