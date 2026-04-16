@@ -116,6 +116,8 @@ The analysis follows a typical data analytics pipeline:
 
 ### Explaratory Data Analysis
 
+The **complete EDA** process is available in the **`Minh_Hoang_SCA_Bank_Customer_Churn.ipynb`** notebook included in this repository.
+
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/DF%20-%20HEAD.png)
 
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/DF%20-%20INFO.png)
