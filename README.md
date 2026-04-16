@@ -120,6 +120,10 @@ The analysis follows a typical data analytics pipeline:
 
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/DF%20-%20INFO.png)
 
+## Dashboard Overview
+
+The Power BI dashboard provides an interactive overview of customer situation:
+
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/POWER%20BI%20DASHBOARD.png)
 
 * Diamond card type has the highest number of complaints, which may be influenced by a larger customer base 
