@@ -169,6 +169,8 @@ A logistic regression model was developed using the following variables:
 
 3. IsActiveMember
 
+The dataset was split into **training (70%)** and **testing (30%)** subsets to evaluate model performance and reduce overfitting risk.
+
 ![image alt](https://github.com/hoangnguyen-create/Bank-Customer-Churn/blob/6647c06a155e01218488c121e86b3f1a6682b6e1/Images/LOGISTIC%20REGRESSION%20MODEL.png)
 
 The model results show that all selected variables are statistically significant predictors of customer churn (LLR p-value < 0.05).
